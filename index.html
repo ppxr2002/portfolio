@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Harilala Najaina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="decale"></div>
+        <a id="icon_menu" onclick="menu_open()">
+            <img src="./img/menuLight.png" alt="menu" width="30px" height="30px" id="img_menu">
+        </a>
+        <div class="flou">
+            <div id="menu_icon">
+                <div>
+                    <span></span>
+                    <a id="fermer" onclick="menu_close()">
+                        <img src="./img/cross_15175551.png" alt="fermer" class="fermer" width="25px" height="25px">
+                    </a>
+                </div>
+    
+                <nav class="menu_icon" id="en">
+                    <a onclick="home()" id="menu" class="1 active">Home</a>
+                    <a onclick="skills()" id="menu" class="2">Skills</a>
+                    <a onclick="projects()" id="menu" class="3">Projects</a>
+                    <a onclick="contact()" id="menu" class="4">Contact</a>
+                </nav>
+        
+                <nav class="menu_icon" id="fr">
+                    <a onclick="home()" id="menu" class="1 active">Accueil</a>
+                    <a onclick="skills()" id="menu" class="2">Compétences</a>
+                    <a onclick="projects()" id="menu" class="3">Projets</a>
+                    <a onclick="contact()" id="menu" class="4">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <nav class="menu" id="en">
+            <a onclick="home()" id="menu" class="1 active">Home</a>
+            <a onclick="skills()" id="menu" class="2">Skills</a>
+            <a onclick="projects()" id="menu" class="3">Projects</a>
+            <a onclick="contact()" id="menu" class="4">Contact</a>
+        </nav>
+
+        <nav class="menu" id="fr">
+            <a onclick="home()" id="menu" class="1 active">Accueil</a>
+            <a onclick="skills()" id="menu" class="2">Compétences</a>
+            <a onclick="projects()" id="menu" class="3">Projets</a>
+            <a onclick="contact()" id="menu" class="4">Contact</a>
+        </nav>
+        <nav class="setting">
+            <div id="light_dark">
+                <a id="light" title="Mode Clair"><img src="./img/icons8-soleil-500.png" width="20px" height="20px" alt="dark"></a>
+                <a id="dark" title="Mode Sombre"><img src="./img/icons8-symbole-de-la-lune-100.png" width="20px" height="20px" alt="dark"></a>
+            </div>
+            <select name="langue" id="langue">
+                <option value="english" id="english" selected>EN</option>
+                <option value="french" id="french">FR</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+
+    <main id="main">
+        <nav id="home">
+            <div id="socio">
+                <div class="socio">
+                    <a href="">
+                        <div id="lien">
+                            <img src="img/icons8-facebook-500.png" alt="facebook">
+                        </div>
+                            <p id="txt">Facebook</p>
+                    </a>
+                    <a href="">
+                        <div id="lien">
+                            <img src="img/icons8-instagram-500.png" alt="instagram">
+                        </div>
+                            <p id="txt">Instagram</p>
+                    </a>
+                    <a href="">
+                        <div id="lien">
+                            <img src="img/icons8-github-500.png" alt="github">
+                        </div>
+                            <p id="txt">Github</p>
+                    </a>
+                    <a href="">
+                        <div id="lien">
+                            <img src="img/icons8-linkedin-500.png" alt="linkedin">
+                        </div>
+                            <p id="txt">Linkedin</p>
+                    </a>
+                </div>
+                <div class="ligne"> </div>
+            </div>
+            <div id="image">
+                <div class="descri" id="en">
+                    <span id="im">Hi, I'm</span>
+                    <h1><a id="nom">HARILALA</a> Najaina</h1>
+                    <p id="text_desc">Young Student in Computer Science and Electronics.<br> I have developed technical skills in Web Development,<br> I am more Back-End</p>
+                </div>
+
+                <div class="descri" id="fr">
+                    <span id="im">Je suis,</span>
+                    <h1><a id="nom">HARILALA</a> Najaina</h1>
+                    <p id="text_desc">Jeune Etudiant en Informatque et Electronique. J'ai développé des compétences techniques dans le Developpemenrt Web, je suis plutôt Back-End</p>
+                </div>
+                <img src="./img/imgLight.png" width="350px" height="350px" alt="me" id="profil">
+            </div>
+            <div class="text">
+                <nav>
+                    <div id="en" class="mother_tools">
+                        <p class="tools">H</p>
+                        <p class="tools">O</p>
+                        <p class="tools">M</p>
+                        <p class="tools">E</p>
+                    </div>
+
+                    <div id="fr" class="mother_tools">
+                        <p class="tools">A</p>
+                        <p class="tools">C</p>
+                        <p class="tools">C</p>
+                        <p class="tools">U</p>
+                        <p class="tools">E</p>
+                        <p class="tools">I</p>
+                        <p class="tools">L</p>
+                    </div>
+                    <div class="ligne"></div>
+                </nav>
+            </div>
+        </nav>
+
+        <nav id="skills">
+            <div class="text">
+                <nav>
+                    <div id="en" class="mother_tools">
+                        <p class="tools">S</p>
+                        <p class="tools">K</p>
+                        <p class="tools">I</p>
+                        <p class="tools">L</p>
+                        <p class="tools">L</p>
+                        <p class="tools">S</p>
+                    </div>
+
+                    <div id="fr" class="mother_tools">
+                        <p class="tools">C</p>
+                        <p class="tools">O</p>
+                        <p class="tools">M</p>
+                        <p class="tools">P</p>
+                        <p class="tools">E</p>
+                        <p class="tools">N</p>
+                        <p class="tools">T</p>
+                        <p class="tools">E</p>
+                        <p class="tools">N</p>
+                        <p class="tools">C</p>
+                        <p class="tools">E</p>
+                        <p class="tools">S</p>
+                    </div>
+                    <div class="ligne"></div>
+                </nav>
+            </div>
+        </nav>
+
+        <nav id="projects">
+            <div class="text">
+                <nav>
+                    <div id="en" class="mother_tools">
+                        <p class="tools">P</p>
+                        <p class="tools">R</p>
+                        <p class="tools">O</p>
+                        <p class="tools">J</p>
+                        <p class="tools">E</p>
+                        <p class="tools">T</p>
+                        <p class="tools">C</p>
+                        <p class="tools">S</p>
+                    </div>
+
+                    <div id="fr" class="mother_tools">
+                        <p class="tools">P</p>
+                        <p class="tools">R</p>
+                        <p class="tools">O</p>
+                        <p class="tools">J</p>
+                        <p class="tools">E</p>
+                        <p class="tools">T</p>
+                        <p class="tools">S</p>
+                    </div>
+                    <div class="ligne"></div>
+                </nav>
+            </div>
+        </nav>
+
+        <nav id="contact">
+            <div class="text">
+                <nav>
+                    <div class="mother_tools">
+                        <p class="tools">C</p>
+                        <p class="tools">O</p>
+                        <p class="tools">N</p>
+                        <p class="tools">T</p>
+                        <p class="tools">A</p>
+                        <p class="tools">C</p>
+                        <p class="tools">T</p>
+                    </div>
+                    <div class="ligne"></div>
+                </nav>
+            </div>
+        </nav>
+    </main>
+
+    <script src="./script/index.js"></script>
+
+</body>
+</html>
