@@ -7,6 +7,20 @@ var dark = $('#dark');
 var image = $('#profil');
 var nom = $('*#nom');
 
+<<<<<<< HEAD
+
+window.onload = ()=>{
+    changeLangue();
+    scrollFenetre("rgba(0, 0, 0, 0.25))");
+    
+    dark.click(()=>{
+        darkMode()
+        scrollFenetre("rgba(255,255,255,0.25)");
+    })
+    light.click(()=>{
+        lightMode();
+        scrollFenetre("rgba(0,0,0,0.25)");
+=======
 window.onload = ()=>{
     changeLangue();
     scrollFenetre("#000");
@@ -18,6 +32,7 @@ window.onload = ()=>{
     light.click(()=>{
         lightMode()
         scrollFenetre("rgba(0,0,0,0)");
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
     })
     
 }
@@ -31,6 +46,17 @@ function menu_classRemove(){
     $(menu[5]).removeClass("active");
     $(menu[6]).removeClass("active");
     $(menu[7]).removeClass("active");
+<<<<<<< HEAD
+    $(menu[8]).removeClass("active");
+    $(menu[9]).removeClass("active");
+    $(menu[10]).removeClass("active");
+    $(menu[11]).removeClass("active");
+    $(menu[12]).removeClass("active");
+    $(menu[13]).removeClass("active");
+    $(menu[14]).removeClass("active");
+    $(menu[15]).removeClass("active");
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 
 function changeLangue(){
@@ -74,6 +100,11 @@ function scrollFenetre(color){
             menu_classRemove();
             $(menu[0]).addClass("active");
             $(menu[4]).addClass("active");
+<<<<<<< HEAD
+            $(menu[8]).addClass("active");
+            $(menu[12]).addClass("active");
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
         }
         else{
             $("#header").css("box-shadow", "0 0px 10px " + color);
@@ -87,20 +118,40 @@ function scrollFenetre(color){
                             menu_classRemove();
                             $(menu[3]).addClass("active"); 
                             $(menu[7]).addClass("active");
+<<<<<<< HEAD
+                            $(menu[11]).addClass("active"); 
+                            $(menu[15]).addClass("active");
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
                         }
                         else{
                             $(menu[2]).addClass("active");
                             $(menu[6]).addClass("active");
+<<<<<<< HEAD
+                            $(menu[10]).addClass("active");
+                            $(menu[14]).addClass("active");
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
                         }
                     }
                     else{
                         $(menu[2]).addClass("active");
                         $(menu[6]).addClass("active");
+<<<<<<< HEAD
+                        $(menu[10]).addClass("active");
+                        $(menu[14]).addClass("active");
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
                     }
                 }
                 else{
                     $(menu[1]).addClass("active");
                     $(menu[5]).addClass("active");
+<<<<<<< HEAD
+                    $(menu[9]).addClass("active");
+                    $(menu[13]).addClass("active");
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
                 }
             }
         }
@@ -120,7 +171,12 @@ function skills(){
 function projects(){
     $("html, body").animate({
         scrollTop: height*2
+<<<<<<< HEAD
+    }, 800);
+    menu_classRemove()
+=======
     }, 800)
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 function contact(){
     $("html, body").animate({
@@ -144,6 +200,15 @@ function darkMode(){
     $("*#txt").css("color", "#45ADFF");
     $("*.ligne").css("background", "#45ADFF");
     $("*#lien").css("background", "#45ADFF");
+<<<<<<< HEAD
+    $("#nomPrenom").hover(()=>{
+        $("#nomPrenom").css("text-shadow", "0 10px 20px rgba(255, 255, 255, 0.25)");
+    }, ()=>{
+        
+        $("#nomPrenom").css("text-shadow", "none");
+    })
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 function lightMode(){
     body.css('background','#f8f8f8');
@@ -161,6 +226,15 @@ function lightMode(){
     $("*#txt").css("color", "#008FFF");
     $("*.ligne").css("background", "#008FFF");
     $("*#lien").css("background", "#008FFF");
+<<<<<<< HEAD
+    $("#nomPrenom").hover(()=>{
+        $("#nomPrenom").css("text-shadow", "0 10px 20px rgba(0, 0, 0, 0.25)");
+    }, ()=>{
+        
+        $("#nomPrenom").css("text-shadow", "none");
+    })
+=======
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 
 function menu_open(){
@@ -170,4 +244,8 @@ function menu_open(){
 function menu_close(){
     $(".flou").css("display", "none");
     $("#icon_menu").css("display", "block");
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
