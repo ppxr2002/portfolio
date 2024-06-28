@@ -103,13 +103,10 @@ select:focus{
     top: 90px;
     left: 0;
     width: 70%;
-<<<<<<< HEAD
     height: 200vh;
     overflow: hidden;
-=======
     height: 200vh; /* Hauteur de l'écran */
     overflow: hidden; /* Empêche le contenu de déborder */
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 .flou::before{
     content: "";
@@ -118,23 +115,16 @@ select:focus{
     left: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     backdrop-filter: blur(5px);
-=======
     backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 #menu_icon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
     text-align: center;
-=======
     text-align: start;
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
-    
 }
 .menu_icon{
     display: flex;
@@ -172,15 +162,12 @@ select:focus{
     justify-content: space-around;
     align-items: center;
 }
-<<<<<<< HEAD
 #profil{
     transition: transform 0.3;
 }
 #profil:hover{
     transform: scale(1.3);
 }
-=======
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 .descri{
     display: flex;
     flex-direction: column;
@@ -196,7 +183,6 @@ span{
     font-size: 20px;
     margin-bottom: 20px;
 }
-<<<<<<< HEAD
 span::after{
     content: '';
     margin-left: 20px;
@@ -211,11 +197,10 @@ h1{
 h1:hover{
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     /* text-shadow: 0 10px 20px rgba(255, 255, 255, 0.25); */
-=======
+}
 h1{
     font-size: 36px;
     margin-bottom: 20px;
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 }
 #nom{
     color: #008FFF;
@@ -328,7 +313,6 @@ h1{
 #contact .text{
     justify-content: start;
 }
-<<<<<<< HEAD
 form{
     height: 75%;
     display: flex;
@@ -416,8 +400,6 @@ label{
     margin-bottom: 15px;
     color: rgba(0, 0, 0, 0.75);
 }
-=======
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
 
 @media only screen and (max-width:1000px) {
     #image{
@@ -461,7 +443,6 @@ label{
         display: none;
     }
 }
-<<<<<<< HEAD
 
 @keyframes point{
     0%{
@@ -480,5 +461,3 @@ label{
         content: '';
     }
 }
-=======
->>>>>>> b21732f24f2d72b1d5c3a231a818507d80c9735a
