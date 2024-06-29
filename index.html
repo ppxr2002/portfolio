@@ -52,8 +52,16 @@
         </nav>
         <nav class="setting">
             <div id="light_dark">
-                <a id="light" title="Mode Clair"><img src="./img/icons8-soleil-500.png" width="20px" height="20px" alt="dark"></a>
-                <a id="dark" title="Mode Sombre"><img src="./img/icons8-symbole-de-la-lune-100.png" width="20px" height="20px" alt="dark"></a>
+                <a id="light" title="Mode Clair">
+                    <center>
+                        <img src="./img/icons8-soleil-500.png" width="20px" height="20px" alt="dark">
+                    </center>
+                </a>
+                <a id="dark" title="Mode Sombre">
+                    <center>
+                        <img src="./img/icons8-symbole-de-la-lune-100.png" width="20px" height="20px" alt="dark">
+                    </center>
+                </a>
             </div>
             <select name="langue" id="langue">
                 <option value="english" id="english" selected>EN</option>
@@ -97,8 +105,7 @@
             <div id="image">
                 <div class="descri" id="en">
                     <span id="im">Hi, I'm</span>
-                    <h1 id="nomPrenom"><a id="nom">HARILALA</a> Najaina</h1>
-                    <h1><a id="nom">HARILALA</a> Najaina</h1>
+                    <h1 id="nom">HARILALA Najaina</h1>
                     <p id="text_desc">Young Student in Computer Science and Electronics.<br> I have developed technical skills in Web Development,<br> I am more Back-End</p>
                 </div>
 
@@ -207,28 +214,33 @@
                 </nav>
             </div>
 
-            <form action="">
-                <div class="textcontact">
-                    <p id="en"> Please fill out the form bellow to contact me. I look forward to hearing from you and will respond as soon posible</p>
-                    <p id="fr"> Veuillez remplir le formulaire ci-dessous  pour me contacter. J'ai hâte de vous lire et je répondrai dès que possible </p>
-                </div>
-                <div class="mail">
-                    <input type="email" id="mail">
-                </div>
-                <div class="motif">
-                    <input type="text" id="motif">
-                </div>
-                <div class="message">
-                    <label for="message">Message :</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="ENVOYER" id="fr">
-                    <input type="submit" value="SEND" id="en">
-                </div>
-            </form>
+            <section>
+                <form action="">
+                    <div class="textcontact">
+                        <p id="en"> Please fill out the form bellow to contact me. I look forward to hearing from you and will respond as soon posible</p>
+                        <p id="fr"> Veuillez remplir le formulaire ci-dessous  pour me contacter. J'ai hâte de vous lire et je répondrai dès que possible </p>
+                    </div>
+                    <div class="mail">
+                        <input type="text" id="mail" required>
+                        <i class="aftermail">Email</i>
+                    </div>
+                    <div class="motif">
+                        <input type="text" id="motif" required>
+                        <i class="aftermotif">Motif</i>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message :</label>
+                        <textarea name="message" id="message" required placeholder="..."></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="ENVOYER" id="fr">
+                        <input type="submit" value="SEND" id="en">
+                    </div>
+                </form>
+                <img src="./img/2.png" alt="Carte visite" width="300px" height="170px" id="carte">
+            </section>
 
-            <div></div>
+            <div class="decale"></div>
         </nav>
     </main>
 

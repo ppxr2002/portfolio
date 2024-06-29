@@ -6,6 +6,17 @@ var light = $('#light');
 var dark = $('#dark');
 var image = $('#profil');
 var nom = $('*#nom');
+var carte = $('#carte');
+var inputMail = $('#mail');
+var boxMail = $('.mail');
+var inputMotif = $('#motif');
+var boxMotif = $('.motif');
+var inputMessage = $('#message');
+var boxMessage = $('.message');
+var textContact = $('.textcontact')
+var afterMail = $('.aftermail');
+var afterMotif = $('.aftermotif');
+var submit = $('.submit input');
 
 
 window.onload = ()=>{
@@ -19,20 +30,17 @@ window.onload = ()=>{
     light.click(()=>{
         lightMode();
         scrollFenetre("rgba(0,0,0,0.25)");
+    })
 
-window.onload = ()=>{
-    changeLangue();
-    scrollFenetre("#000");
-    
-    dark.click(()=>{
-        darkMode()
-        scrollFenetre("rgba(255,255,255,0.1)");
+    carte.hover(()=>{
+        carte.css('transform', "rotateY(360deg) scale(1.2)");
+        carte.css('transition', "1s transform");
+        carte.attr('src', './img/1.png');
+    }, ()=>{
+        carte.css('transform', "rotateY(0deg) scale(1)");
+        carte.css('transition', "1s transform");
+        carte.attr('src', './img/2.png');
     })
-    light.click(()=>{
-        lightMode()
-        scrollFenetre("rgba(0,0,0,0)");
-    })
-    
 }
 
 function menu_classRemove(){
@@ -152,8 +160,6 @@ function projects(){
     $("html, body").animate({
         scrollTop: height*2
     }, 800);
-    menu_classRemove()
-    }, 800)
 }
 function contact(){
     $("html, body").animate({
@@ -183,6 +189,35 @@ function darkMode(){
         
         $("#nomPrenom").css("text-shadow", "none");
     })
+    carte.css('box-shadow', '0 0 10px rgba(255, 255, 255, 0.1)');
+    textContact.css('color', '#fff');
+    boxMail.css('border', '1px solid rgba(255, 255, 255, 0.25)');
+    boxMotif.css('border', '1px solid rgba(255, 255, 255, 0.25)');
+    inputMessage.css('border', '1px solid rgba(255, 255, 255, 0.25)');
+    inputMail.css('color', '#fff');
+    inputMotif.css('color', '#fff');
+    inputMessage.css('color', '#fff');
+    $("form").css("color", "#fff");
+    afterMail.css('background-color', '#000');
+    afterMotif.css('background-color', '#000');
+    afterMail.css('color', 'rgba(255, 255, 255, 0.5)');
+    afterMotif.css('color', 'rgba(255, 255, 255, 0.5)');
+    submit.css("background", "#45ADFF");
+    $('select').hover(()=>{
+        $('select').css('border', '1px solid rgba(255, 255, 255, 1)');
+    }, ()=>{
+        $('select').css('border', 'none');
+    })
+    $('h1').hover(()=>{
+        $('h1').css('text-shadow', '0 10px 20px rgba(255, 255, 255, 0.25)');
+    }, ()=>{
+        $('h1').css('text-shadow', 'none');
+    })
+    image.hover(()=>{
+        image.css('filter', 'drop-shadow(0 0 4px rgba(255, 255, 255, 0.5))');
+    }, ()=>{
+        image.css('filter', 'none');
+    })
 }
 function lightMode(){
     body.css('background','#f8f8f8');
@@ -206,6 +241,35 @@ function lightMode(){
         
         $("#nomPrenom").css("text-shadow", "none");
     })
+    carte.css('box-shadow', '0 0 10px rgba(0, 0, 0, 0.25)');
+    textContact.css('color', 'rgba(0, 0, 0, 0.75)');
+    $("form").css("color", "#000");
+    boxMail.css('border', '1px solid rgba(0, 0, 0, 0.25)');
+    boxMotif.css('border', '1px solid rgba(0, 0, 0, 0.25)');
+    inputMessage.css('border', '1px solid rgba(0, 0, 0, 0.25)');
+    inputMail.css('color', '#000');
+    inputMotif.css('color', '#000');
+    inputMessage.css('color', '#000');
+    afterMail.css('background-color', '#f8f8f8');
+    afterMotif.css('background-color', '#f8f8f8');
+    afterMail.css('color', 'rgba(0, 0, 0, 0.5)');
+    afterMotif.css('color', 'rgba(0, 0, 0, 0.5)');
+    submit.css("background", "#008FFF");
+    $('select').hover(()=>{
+        $('select').css('border', '1px solid rgba(0, 0, 0, 1)');
+    }, ()=>{
+        $('select').css('border', 'none');
+    })
+    $('h1').hover(()=>{
+        $('h1').css('text-shadow', '0 10px 20px rgba(0, 0, 0, 0.5)');
+    }, ()=>{
+        $('h1').css('text-shadow', 'none');
+    })
+    image.hover(()=>{
+        image.css('filter', 'drop-shadow(0 0 4px rgba(0, 0, 0, 0.5))');
+    }, ()=>{
+        image.css('filter', 'none');
+    })
 }
 
 function menu_open(){
@@ -215,5 +279,4 @@ function menu_open(){
 function menu_close(){
     $(".flou").css("display", "none");
     $("#icon_menu").css("display", "block");
-}
 }
