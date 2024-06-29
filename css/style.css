@@ -115,22 +115,22 @@ select:hover{
 }
 .flou{
     display: none;
-    position: sticky;
-    top: 1000px;
+    position: relative;
+    top: 90px;
     left: 0;
     width: 70%;
-    height: 100vh;
+    height: 200vh;
     overflow: hidden;
     height: 200vh; /* Hauteur de l'écran */
     overflow: hidden; /* Empêche le contenu de déborder */
 }
 .flou::before{
     content: "";
-    position: sticky;
-    top: 10px;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     backdrop-filter: blur(5px);
     backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
 }
@@ -196,12 +196,12 @@ select:hover{
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
 }
-.descri span{
+span{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     margin-bottom: 20px;
 }
-.descri span::after{
+span::after{
     content: '';
     margin-left: 20px;
     font-size: 25px;
