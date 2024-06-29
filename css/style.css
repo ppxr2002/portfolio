@@ -116,7 +116,7 @@ select:hover{
 .flou{
     display: none;
     position: sticky;
-    top: 100px;
+    top: 1000px;
     left: 0;
     width: 70%;
     height: 100vh;
