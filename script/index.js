@@ -21,15 +21,13 @@ var submit = $('.submit input');
 
 window.onload = ()=>{
     changeLangue();
-    scrollFenetre("rgba(0, 0, 0, 0.25))");
+    lightMode()
     
     dark.click(()=>{
         darkMode()
-        scrollFenetre("rgba(255,255,255,0.25)");
     })
     light.click(()=>{
         lightMode();
-        scrollFenetre("rgba(0,0,0,0.25)");
     })
 
     carte.hover(()=>{
@@ -168,6 +166,7 @@ function contact(){
 }
 
 function darkMode(){
+    scrollFenetre("rgba(255,255,255,0.25)");
     body.css('background','#000');
     header.css('background','#000');
     light.css('display','block');
@@ -218,8 +217,10 @@ function darkMode(){
     }, ()=>{
         image.css('filter', 'none');
     })
+    $(".fermer").attr('src', './img/fermerDark.svg');
 }
 function lightMode(){
+    scrollFenetre("rgba(0,0,0,0.75)");
     body.css('background','#f8f8f8');
     header.css('background','#f8f8f8');
     light.css('display','none');
@@ -270,6 +271,7 @@ function lightMode(){
     }, ()=>{
         image.css('filter', 'none');
     })
+    $(".fermer").attr('src', './img/fermerLight.svg');
 }
 
 function menu_open(){
