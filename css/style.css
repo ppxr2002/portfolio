@@ -482,6 +482,9 @@ section{
     section{
         flex-direction: column;
     }
+    header{
+        width: 110vw;
+    }
 }
 
 @keyframes point{
