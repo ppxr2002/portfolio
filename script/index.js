@@ -39,6 +39,11 @@ window.onload = ()=>{
         carte.css('transition', "1s transform");
         carte.attr('src', './img/2.png');
     })
+
+    date = new Date()
+    annee = date.getFullYear()
+    // alert(annee);
+    $("#footer").append(annee)
 }
 
 function menu_classRemove(){
@@ -202,6 +207,11 @@ function darkMode(){
     afterMail.css('color', 'rgba(255, 255, 255, 0.5)');
     afterMotif.css('color', 'rgba(255, 255, 255, 0.5)');
     submit.css("background", "#45ADFF");
+    $('.submit input').hover(()=>{
+        $('.submit input').css('box-shadow', '0 0 10px rgba(255, 255, 255, 0.25)');
+    }, ()=>{
+        $('.submit input').css('box-shadow', 'none');
+    })
     $('select').hover(()=>{
         $('select').css('border', '1px solid rgba(255, 255, 255, 1)');
     }, ()=>{
@@ -218,6 +228,14 @@ function darkMode(){
         image.css('filter', 'none');
     })
     $(".fermer").attr('src', './img/fermerDark.svg');
+    $('footer').css({
+        'color': '#fff',
+        'border-top': '1px #fff solid'
+    });
+    $("#skills_1").css('box-shadow', 'inset 0 0 10px rgba(255, 255, 255, 0.5)');
+    $("#skills_2").css('box-shadow', 'inset 0 0 10px rgba(255, 255, 255, 0.5)');
+    $("#skills_1 p").css('color', '#fff');
+    $("#skills_2 p").css('color', '#fff');
 }
 function lightMode(){
     scrollFenetre("rgba(0,0,0,0.75)");
@@ -256,6 +274,11 @@ function lightMode(){
     afterMail.css('color', 'rgba(0, 0, 0, 0.5)');
     afterMotif.css('color', 'rgba(0, 0, 0, 0.5)');
     submit.css("background", "#008FFF");
+    $('.submit input').hover(()=>{
+        $('.submit input').css('box-shadow', '0 0 10px rgba(0, 0, 0, 0.5)');
+    }, ()=>{
+        $('.submit input').css('box-shadow', 'none');
+    })
     $('select').hover(()=>{
         $('select').css('border', '1px solid rgba(0, 0, 0, 1)');
     }, ()=>{
@@ -272,6 +295,14 @@ function lightMode(){
         image.css('filter', 'none');
     })
     $(".fermer").attr('src', './img/fermerLight.svg');
+    $('footer').css({
+        'color': '#000',
+        'border-top': '1px #000 solid'
+    });
+    $("#skills_1").css('box-shadow', 'inset 0 0 10px rgba(0, 0, 0, 0.5)');
+    $("#skills_2").css('box-shadow', 'inset 0 0 10px rgba(0, 0, 0, 0.5)');
+    $("#skills_1 p").css('color', '#000');
+    $("#skills_2 p").css('color', '#000');
 }
 
 function menu_open(){
