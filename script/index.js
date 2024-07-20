@@ -17,12 +17,25 @@ var textContact = $('.textcontact')
 var afterMail = $('.aftermail');
 var afterMotif = $('.aftermotif');
 var submit = $('.submit input');
+var next = $('#next');
+var prev = $('#prev');
+var projetEN = $('*#en .projet');
+var projetFR = $('*#fr .projet');
+var img_projet = $('#img_projet');
+var projet_descri = $('*.projet_descri');
+var link_projet = $('*#link_projet');
 
+
+$(document).ready(function() {
+    $(window).scrollTop(0);
+});
 
 window.onload = ()=>{
     changeLangue();
-    lightMode()
-    
+    lightMode();
+    change_imgProjet();
+    projetClick();
+
     dark.click(()=>{
         darkMode()
     })
@@ -69,6 +82,7 @@ function changeLangue(){
     document.getElementById("langue").addEventListener("change", ()=>{
         let width = $(window).width();
         let langue = $("#langue option:selected").val();
+        change_imgProjet();
         
         
         if(langue === "english"){
@@ -236,6 +250,22 @@ function darkMode(){
     $("#skills_2").css('box-shadow', 'inset 0 0 10px rgba(255, 255, 255, 0.5)');
     $("#skills_1 p").css('color', '#fff');
     $("#skills_2 p").css('color', '#fff');
+    projetEN.each((index, element)=>{
+        $(element).css('color', '#FFF');
+    })
+    projetFR.each((index, element)=>{
+        $(element).css({
+            'color': '#FFF',
+            'background-color': 'transparent',
+        });
+    })
+    projet_descri.each((index, element)=>{
+        $(element).css('color', '#FFF');
+    })
+    $('.sary').attr('src', './img/flecheDark.png');
+    $('#prev img').attr('src', './img/prevDark.png');
+    $('#next img').attr('src', './img/nextDark.png');
+    $('#detail').css('box-shadow', 'inset 0 0 10px rgba(255, 255, 255, 0.25)');
 }
 function lightMode(){
     scrollFenetre("rgba(0,0,0,0.75)");
@@ -303,6 +333,25 @@ function lightMode(){
     $("#skills_2").css('box-shadow', 'inset 0 0 10px rgba(0, 0, 0, 0.5)');
     $("#skills_1 p").css('color', '#000');
     $("#skills_2 p").css('color', '#000');
+    projetFR.each((index, element)=>{
+        $(element).css({
+            'color': '#000',
+            'background-color': 'transparent',
+        });
+    })
+    projetEN.each((index, element)=>{
+        $(element).css({
+            'color': '#000',
+            'background-color': 'transparent',
+        });
+    })
+    $('.sary').attr('src', './img/flecheLight.png');
+    $('#prev img').attr('src', './img/prevLight.png');
+    $('#next img').attr('src', './img/nextLight.png');
+    projet_descri.each((index, element)=>{
+        $(element).css('color', '#000');
+    })
+    $('#detail').css('box-shadow', 'inset 0 0 10px rgba(0, 0, 0, 0.25)');
 }
 
 function menu_open(){
@@ -312,4 +361,110 @@ function menu_open(){
 function menu_close(){
     $(".flou").css("display", "none");
     $("#icon_menu").css("display", "block");
+}
+
+function prevBtn(){
+    projetEN.each(function(index, element) {
+        if($(element).hasClass('izy')){
+            i = (index - 1 + projetEN.length) % projetEN.length;
+            $(projetEN[index]).removeClass('izy');
+            $(projetEN[i]).addClass('izy');
+            change_imgProjet();
+            return false;
+        }
+    })
+    projetFR.each(function(index, element) {
+        if($(element).hasClass('izy')){
+            i = (index - 1 + projetEN.length) % projetFR.length;
+            $(projetFR[index]).removeClass('izy');
+            $(projetFR[i]).addClass('izy');
+            change_imgProjet();
+            return false;
+        }
+    })
+}
+
+
+function nextBtn(){
+    projetEN.each(function(index, element) {
+        if($(element).hasClass('izy')){
+            i = (index + 1 + projetEN.length) % projetEN.length;
+            $(projetEN[index]).removeClass('izy');
+            $(projetEN[i]).addClass('izy');
+            change_imgProjet();
+            return false;
+        }
+    })
+    projetFR.each(function(index, element) {
+        if($(element).hasClass('izy')){
+            i = (index + 1 + projetEN.length) % projetFR.length;
+            $(projetFR[index]).removeClass('izy');
+            $(projetFR[i]).addClass('izy');
+            change_imgProjet();
+            return false; //sortir de la boucle each
+        }
+    })
+}
+
+function change_imgProjet(){
+    projetEN.each(function(index, element) {
+        if($(element).hasClass('izy')){
+            switch (index) {
+                case 0:
+                    img_projet.attr('src', './img/1.png');
+                    remove_itoClass();
+                    $(projet_descri[0]).addClass('ito');
+                    $(link_projet[0]).attr('href', 'google.com');
+                    $(link_projet[1]).attr('href', 'google.com');
+                    break;
+                case 1:
+                    img_projet.attr('src', './img/2.png');
+                    remove_itoClass();
+                    $(projet_descri[1]).addClass('ito');
+                    $(link_projet[0]).attr('href', 'facebook.com');
+                    $(link_projet[1]).attr('href', 'facebook.com');
+                    break;
+                case 2:
+                    img_projet.attr('src', './img/HN.png');
+                    remove_itoClass();
+                    $(projet_descri[2]).addClass('ito');
+                    $(link_projet[0]).attr('href', 'youtube.com');
+                    $(link_projet[1]).attr('href', 'youtube.com');
+                    break;
+                default:
+                    img_projet.attr('src', './img/c.svg');
+                    remove_itoClass()
+            }
+        }
+    })
+}
+function remove_itoClass(){
+    projet_descri.each((index, element)=>{
+        $(element).removeClass('ito');
+    })
+}
+
+function remove_izyClass(){
+    projetEN.each((index, element)=>{
+        $(element).removeClass('izy');
+    })
+    projetFR.each((index, element)=>{
+        $(element).removeClass('izy');
+    })
+}
+function projetClick(){
+    projetEN.each((index, element)=>{
+        $(element).click(()=>{
+            remove_izyClass();
+            $(element).addClass('izy');
+            change_imgProjet();
+        })
+    })
+    projetFR.each((index, element)=>{
+        $(element).click(()=>{
+            remove_izyClass();
+            $(element).addClass('izy');
+            change_imgProjet();
+        })
+    })
 }

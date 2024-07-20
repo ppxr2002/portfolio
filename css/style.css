@@ -17,14 +17,19 @@ a{
     cursor: pointer;
 
 }
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 body{
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
     overflow-x: hidden;
+    width: 100vw;
 }
 main{
     width: 100%;
@@ -45,6 +50,7 @@ header{
     top: 0;
     background-color: #f8f8f8;
     transition: box-shadow 0.3s;
+    z-index: 10;
 }
 .menu{
     width: 35%;
@@ -57,6 +63,7 @@ header{
     color: #000;
     font-size: 17px;
     transition: 0.1s opacity;
+    padding: 3px;
 }
 .active:hover{
     opacity: 1 !important;
@@ -65,7 +72,7 @@ header{
     opacity: 0.3;
 }
 .active{
-    border-bottom: #1b5b8f 2px solid;
+    border-bottom: #1b5b8f 3px solid;
 }
 #light{
     background-color: transparent;
@@ -364,6 +371,90 @@ h1:hover{
 }
 #projects .text{
     justify-content: start;
+}
+#projects section{
+    display: flex;
+    gap: 50px;
+    height: 80%;
+}
+#liste{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#detail{
+    width: 330px;
+    height: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#detail li{
+    opacity: 1;
+    padding: 5px;
+    cursor: text;
+}
+.projet_descri{
+    display: none;
+}
+.ito{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+#projet_button{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.open{
+    padding: 5px;
+    height: 25px;
+    width: 70px;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 2px;
+
+}
+.open a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+li{
+    list-style: none;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    align-self: center;
+    gap: 10px;
+    width: 250px;
+    border-radius: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.izy{
+    background-color: #0091ff8c;
+    align-items: center;
+    opacity: 1;
+}
+li img{
+    opacity: 0;
+}
+.izy img{
+    opacity: 1;
 }
 
 /* CONTACT */

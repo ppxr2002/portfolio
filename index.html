@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Harilala Najaina</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/HN.png">
     <script src="script/jquery-3.7.1.min.js"></script>
 </head>
 <body>
@@ -23,14 +24,14 @@
                 </div>
     
                 <nav class="menu_icon" id="en">
-                    <a onclick="home()" id="menu" class="1 active">Home</a>
+                    <a onclick="home()" id="menu" class="1">Home</a>
                     <a onclick="skills()" id="menu" class="2">Skills</a>
                     <a onclick="projects()" id="menu" class="3">Projects</a>
                     <a onclick="contact()" id="menu" class="4">Contact</a>
                 </nav>
         
                 <nav class="menu_icon" id="fr">
-                    <a onclick="home()" id="menu" class="1 active">Accueil</a>
+                    <a onclick="home()" id="menu" class="1">Accueil</a>
                     <a onclick="skills()" id="menu" class="2">Compétences</a>
                     <a onclick="projects()" id="menu" class="3">Projets</a>
                     <a onclick="contact()" id="menu" class="4">Contact</a>
@@ -142,8 +143,6 @@
                 </nav>
             </div>
         </nav>
-
-        <div style="width: 20vw; border-bottom: 3px solid #008FFF;"></div>
 
         <nav id="skills">
             <div class="text">
@@ -264,8 +263,6 @@
             <div id="decale"></div>
         </nav>
 
-        <div style="width: 20vw; border-bottom: 3px solid #008FFF;"></div>
-
         <nav id="projects">
             <div class="text">
                 <nav>
@@ -291,10 +288,78 @@
                     </div>
                     <div class="ligne"></div>
                 </nav>
-            </div>
-        </nav>
 
-        <div style="width: 20vw; border-bottom: 3px solid #008FFF;"></div>
+            </div>
+            <section>
+                <div id="liste">
+                    <ul id="en">
+                        <li class="projet izy"><img src="./img/flecheLight.png" width="15px" height="15px" class="sary"> Gestion d'un ecole</li>
+                        <li class="projet"><img src="./img/flecheLight.png" width="15px" height="15px" class="sary"> Gestion d'une pharmacie</li>
+                        <li class="projet"><img src="./img/flecheLight.png" width="15px" height="15px" class="sary"> Game 3 pour un joueur</li>
+                    </ul>
+                    <ul id="fr">
+                        <li class="projet izy"><img src="./img/flecheLight.png" width="15px" height="15px" class="sary"> Gestion d'un ecole</li>
+                        <li class="projet"><img src="./img/flecheLight.png" width="15px" height="15px" class="sary"> Gestion d'une pharmacie</li>
+                        <li class="projet"><img src="./img/flecheLight.png" width="15px" height="15px" class="sary"> Game 3 pour un joueur</li>
+                </div>
+                <div id="detail">
+                    <img src="./img/c.svg" alt="" width="330px" height="230px" id="img_projet">
+                    <ul class="projet_descri ito">
+                        <li>
+                            <h4><u>OS:</u> Web</h4>
+                        </li>
+                        <li>
+                            <h4><u>Front-end:</u> React (JS)</h4>
+                        </li>
+                        <li>
+                            <h4><u>Back-end:</u> PHP</h4>
+                        </li>
+                        <li>
+                            <h4><u>Data Base:</u> MySql</h4>
+                        </li>
+                    </ul>
+                    <ul class="projet_descri">
+                        <li>
+                            <h4><u>OS:</u> Web</h4>
+                        </li>
+                        <li>
+                            <h4><u>Front-end:</u> Vue (JS)</h4>
+                        </li>
+                        <li>
+                            <h4><u>Back-end:</u> PHP</h4>
+                        </li>
+                        <li>
+                            <h4><u>Data Base:</u> MySql</h4>
+                        </li>
+                    </ul><ul class="projet_descri">
+                        <li>
+                            <h4><u>OS:</u> Android</h4>
+                        </li>
+                        <li>
+                            <h4><u>Front-end:</u> Kivy</h4>
+                        </li>
+                        <li>
+                            <h4><u>Back-end:</u> Python</h4>
+                        </li>
+                    </ul>
+                    <div id="projet_button">
+                        <button id="prev" onclick="prevBtn()">
+                            <img src="./img/prevLight.png" alt="" width="25px" height="25px">
+                        </button>
+                        <button class="open" id="en">
+                            <a href="" target="_blank" id="link_projet">OPEN</a>
+                        </button>
+                        <button class="open" id="fr">
+                            <a href="" target="_blank" id="link_projet">OUVRIR</a>
+                        </button>
+                        <button id="next" onclick="nextBtn()">
+                            <img src="./img/nextLight.png" alt="" width="25px" height="25px">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <div></div>
+        </nav>
 
         <nav id="contact">
             <div class="text">
