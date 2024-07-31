@@ -353,6 +353,7 @@ h1:hover{
 #cpp:hover, #java:hover, #wordpress:hover, #node:hover, #reseaux{
     border-top: 5px solid #1b5b8f;
     border-right: 5px solid #1b5b8f;
+    transform-origin: 0%;
 }
 #js:hover, #php:hover, #html:hover, #css:hover, #bootstrap:hover, #jquery:hover, #windows:hover{
     border: 5px solid #1b5b8f;
