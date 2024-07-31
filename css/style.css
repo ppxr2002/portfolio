@@ -350,9 +350,17 @@ h1:hover{
     gap: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-#python:hover{
+#cpp:hover, #java:hover, #wordpress:hover, #node:hover, #reseaux{
     border-top: 5px solid #1b5b8f;
     border-right: 5px solid #1b5b8f;
+}
+#js:hover, #php:hover, #html:hover, #css:hover, #bootstrap:hover, #jquery:hover, #windows:hover{
+    border: 5px solid #1b5b8f;
+}
+#c:hover, #python:hover, #linux:hover{
+    border-top: 5px solid #1b5b8f;
+    border-right: 5px solid #1b5b8f;
+    border-left: 5px solid #1b5b8f;
 }
 #skills span{
     color: #1b5b8f;
