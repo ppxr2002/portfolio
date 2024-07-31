@@ -350,8 +350,9 @@ h1:hover{
     gap: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-#skills_1 a:hover, #skills_2 a:hover{
-    border: 3px solid #1b5b8f ;
+#python:hover{
+    border-top: 5px solid #1b5b8f;
+    border-right: 5px solid #1b5b8f;
 }
 #skills span{
     color: #1b5b8f;
