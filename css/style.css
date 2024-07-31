@@ -338,7 +338,7 @@ h1:hover{
     gap: 20px;
 }
 #skills_1 a, #skills_2 a{
-    padding: 10px;
+    padding: 15px;
     height: 110px;
     width: 110px;
     display: flex;
@@ -350,12 +350,11 @@ h1:hover{
     gap: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-#cpp:hover, #java:hover, #wordpress:hover, #node:hover, #reseaux{
+#cpp:hover, #java:hover, #wordpress:hover, #node:hover, #reseaux:hover, #react:hover, #symfony:hover{
     border-top: 5px solid #1b5b8f;
     border-right: 5px solid #1b5b8f;
-    transform-origin: 0%;
 }
-#js:hover, #php:hover, #html:hover, #css:hover, #bootstrap:hover, #jquery:hover, #windows:hover{
+#js:hover, #php:hover, #html:hover, #css:hover, #bootstrap:hover, #jquery:hover, #windows:hover, #sql:hover, #mysql:hover{
     border: 5px solid #1b5b8f;
 }
 #c:hover, #python:hover, #linux:hover{
