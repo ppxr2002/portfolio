@@ -338,14 +338,15 @@ h1:hover{
     gap: 20px;
 }
 #skills_1 a, #skills_2 a{
-    padding: 10px;
+    padding: 15px;
     height: 110px;
     width: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
+    border-radius: 50%;
     gap: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
