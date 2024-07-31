@@ -338,7 +338,7 @@ h1:hover{
     gap: 20px;
 }
 #skills_1 a, #skills_2 a{
-    padding: 20px;
+    padding: 10px;
     height: 110px;
     width: 110px;
     display: flex;
