@@ -219,9 +219,6 @@ function darkMode(){
     inputMail.css('color', '#fff');
     inputMotif.css('color', '#fff');
     inputName.css('color', '#fff');
-    inputMail.css('background', '#000');
-    inputMotif.css('background', '#000');
-    inputName.css('background', '#000');
     inputMessage.css('color', '#fff');
     $("form").css("color", "#fff");
     afterMail.css('background-color', '#000');
@@ -310,9 +307,6 @@ function lightMode(){
     inputMail.css('color', '#000');
     inputMotif.css('color', '#000');
     inputName.css('color', '#000');
-    inputMail.css('background', '#fff');
-    inputMotif.css('background', '#fff');
-    inputName.css('background', '#fff');
     inputMessage.css('color', '#000');
     afterMail.css('background-color', '#f8f8f8');
     afterMotif.css('background-color', '#f8f8f8');
