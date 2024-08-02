@@ -9,7 +9,7 @@ $('#formContact').addEventListener('submit', function(event) {
         var to = encodeURIComponent('rotsiniainanajaina@gmail.com');
         
         alert(name +" "+ email +" "+ message +" "+ subject +" "+ to)
-        // var mailtoLink = `mailto:${to}?subject=${subject}&body=Name: ${name}%0AEmail: ${email}%0AMessage:%0A${message}`;
+        var mailtoLink = `mailto:${to}?subject=${subject}&body=Name: ${name}%0AEmail: ${email}%0AMessage:%0A${message}`;
 
-        // window.location.href = mailtoLink;
+        window.location.href = mailtoLink;
     });
