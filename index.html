@@ -8,22 +8,9 @@
     <link rel="icon" href="./img/code-solid.svg">
     <script src="script/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcjDR4qAAAAAIgW16Da2cYTwGp8ara7C2Btsnc9"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         emailjs.init("s-PvfpIv3jb7Pbfx-");
-
-        function onSubmit(token) {
-            document.getElementById('formContact').submit();
-        }
-
-        function onLoad() {
-            grecaptcha.ready(function() {
-                grecaptcha.execute('6LcjDR4qAAAAAIgW16Da2cYTwGp8ara7C2Btsnc9', {action: 'submit'}).then(function(token) {
-                    var recaptchaResponse = document.getElementById('g-recaptcha-response');
-                    recaptchaResponse.value = token;
-                });
-            });
-        }
     </script>
 </head>
 <body>
@@ -425,7 +412,7 @@
                         <label for="message">Message :</label>
                         <textarea name="message" id="message" name="message" required placeholder="..."></textarea>
                     </div>
-                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                    <div class="g-recaptcha" data-sitekey="6LdDEB4qAAAAAKFqeakukyHLklVHES3YH2XaWNcO"></div>
                     <div class="submit">
                         <input type="submit" value="ENVOYER" id="fr">
                         <input type="submit" value="SEND" id="en">
