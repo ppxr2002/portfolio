@@ -505,7 +505,7 @@ input:focus, textarea:focus{
     padding: 10px 15px 10px 15px;
     position: relative;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 280px;
 }
 .aftermail, .aftermotif, .aftername{
