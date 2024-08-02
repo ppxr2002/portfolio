@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/code-solid.svg">
     <script src="script/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         emailjs.init("s-PvfpIv3jb7Pbfx-");
@@ -411,6 +413,7 @@
                         <label for="message">Message :</label>
                         <textarea name="message" id="message" name="message" required placeholder="..."></textarea>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LckCh4qAAAAAIyH4bNIl-ke0aRHmUJSDFuKGrgf"></div>
                     <div class="submit">
                         <input type="submit" value="ENVOYER" id="fr">
                         <input type="submit" value="SEND" id="en">
