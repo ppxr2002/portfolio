@@ -544,12 +544,13 @@ label{
 }
 .message{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 .submit{
     width: 90%;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -577,7 +578,7 @@ label{
     justify-content: center;
     align-items: center;
     width: max-content;
-    height: 75%;
+    height: 80%;
 }
 #carte{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
