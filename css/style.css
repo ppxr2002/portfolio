@@ -490,7 +490,7 @@ form{
     align-items: center;
     margin-right: 50px;
 }
-#mail, #motif{
+#mail, #motif, #name{
     background: transparent;
     border: none;
     font-size: 16px;
@@ -499,7 +499,7 @@ form{
 input:focus, textarea:focus{
     outline: none;
 }
-.mail, .motif{
+.mail, .motif, .name{
     border-radius: 10px;
     border: 1px solid  rgba(0, 0, 0, 0.25);
     padding: 10px 15px 10px 15px;
@@ -508,7 +508,7 @@ input:focus, textarea:focus{
     margin-top: 20px;
     width: 280px;
 }
-.aftermail, .aftermotif{
+.aftermail, .aftermotif, .aftername{
     top: 8px;
     left: 10px;
     position: absolute;
@@ -519,11 +519,11 @@ input:focus, textarea:focus{
     font-size: 14px;
     transition: top 0.3s;
 }
-#mail:focus + .aftermail, #motif:focus + .aftermotif{
+#mail:focus + .aftermail, #motif:focus + .aftermotif, #name:focus + .aftername{
     top: -10px;
     z-index: 10;
 }
-#mail:valid + .aftermail, #motif:valid + .aftermotif{
+#mail:valid + .aftermail, #motif:valid + .aftermotif, #name:valid + .aftername{
     top: -10px;
     z-index: 10;
 }
