@@ -349,6 +349,7 @@ h1:hover{
     border-radius: 50%;
     gap: 10px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 #cpp:hover, #java:hover, #wordpress:hover, #node:hover, #reseaux:hover, #react:hover, #symfony:hover{
     border-top: 5px solid #1b5b8f;
